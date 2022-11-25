@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
-    dynamic colorBackground = const Color.fromARGB(255, 246, 244, 237);
-    dynamic colorAppBar = const Color.fromARGB(255, 38, 1, 117);
+    dynamic colorBackground = const Color.fromARGB(255, 237, 236, 231);
+    dynamic colorApp = const Color.fromARGB(255, 38, 1, 117);
+    const fontSize = TextStyle(fontSize: 20);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: colorAppBar,
+        backgroundColor: colorApp,
         elevation: 3.8,
         title: Text('Pay', style: GoogleFonts.nunito(fontSize: 30)),
       ),
@@ -18,16 +18,19 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-
-          ///crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "Número de tarjetas vinculadas",
-              style: GoogleFonts.nunito(fontSize: 18),
-            ),
-            const Text("0")
+          children: const [
+            Text("Tarjetas vinculadas", style: fontSize),
+            Text("0", style: fontSize)
           ],
         ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: colorApp,
+        child: const Icon(Icons.add_card),
+        onPressed: () {
+          print('Hola mundo');
+        },
       ),
     );
   }
