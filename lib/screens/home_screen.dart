@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,14 +12,20 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: colorAppBar,
         elevation: 3.8,
-        title: const Center(child: Text('Pay')),
+        title: Text('Pay', style: GoogleFonts.nunito(fontSize: 30)),
       ),
       backgroundColor: colorBackground,
       body: Center(
         child: Column(
-          children: const <Widget>[
-            Text("Numero de tarjetas vinculadas"),
-            Text("0")
+          mainAxisAlignment: MainAxisAlignment.center,
+
+          ///crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "Número de tarjetas vinculadas",
+              style: GoogleFonts.nunito(fontSize: 18),
+            ),
+            const Text("0")
           ],
         ),
       ),
