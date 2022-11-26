@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: colorApp,
         elevation: 3.8,
-        title: Text('Pay', style: GoogleFonts.nunito(fontSize: 30)),
+        title: Text('Home Pay', style: GoogleFonts.nunito(fontSize: 30)),
       ),
       backgroundColor: colorBackground,
       body: Center(
