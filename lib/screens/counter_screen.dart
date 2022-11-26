@@ -18,7 +18,7 @@ class _CounterScreenState extends State<CounterScreen> {
       appBar: AppBar(
         backgroundColor: colorApp,
         elevation: 3.8,
-        title: Text('Whakau Pay', style: GoogleFonts.nunito(fontSize: 30)),
+        title: Text('Pay', style: GoogleFonts.nunito(fontSize: 30)),
       ),
       backgroundColor: colorBackground,
       body: Center(
